@@ -9,9 +9,11 @@ import {
   Box,
   Divider,
 } from "@mui/material";
-
 import backgroundImage from "../assets/Images/devTinder_background.webp";
 import Footer from "./Footer";
+import SignUp from "./SignUp";
+
+
 
 
 const Home = () => {
@@ -56,8 +58,9 @@ const Home = () => {
       setIndex((prevIndex) => (prevIndex + 3) % (boxes.length));
     }, 5000);
     return () => clearInterval(interval);
-  },[]);
+  },[boxes.length]);
 
+  const [signUpVisble, setSignUpVisble] = useState(false)
   
 
   return (
@@ -81,7 +84,7 @@ const Home = () => {
             backgroundColor: "rgba(0, 0, 0, 0)",
             color: "rgb(33, 38, 46)",
             backgroundImage: `linear-gradient(to top,transparent,transparent,transparent, rgba(0, 0, 0, 0.7)), url(${backgroundImage})`,
-            filter: "brightness(50%)",
+            // filter: "brightness(100%)",
           }}
         >
           <AppBar
@@ -188,11 +191,15 @@ const Home = () => {
                   fontWeight: "bolder",
                   textTransform: "capitalize",
                 }}
+                onClick={()=>setSignUpVisble((prev)=>!prev)}
               >
                 Log in
               </Button>
             </Toolbar>
           </AppBar>
+          {
+            signUpVisble && <SignUp setSignUpVisible={setSignUpVisble} />
+          }
 
           <Stack
             direction="column"
@@ -226,7 +233,7 @@ const Home = () => {
             textAlign={"end"}
             mr={3}
           >
-            All photos are of models and used for illustrative purposes only{" "}
+            All photos are of models and used for illustrative purposes only
           </Typography>
         </Stack>
 
