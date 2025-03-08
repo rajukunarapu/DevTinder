@@ -213,6 +213,7 @@ const Home = () => {
 
             <Button
               variant="contained"
+              onClick={()=>setSignUpVisble((prev)=>!prev)}
               sx={{
                 textTransform: "capitalize",
                 borderRadius: 10,
