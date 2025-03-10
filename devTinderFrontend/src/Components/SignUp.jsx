@@ -155,29 +155,6 @@ const SignUp = ({ setSignUpVisible }) => {
               <Button
                 variant="contained"
                 color="black"
-                startIcon={<Facebook sx={{ color: "blue" }} />}
-                href="https://www.facebook.com/login.php?skip_api_login=1&api_key=464891386855067&kid_directed_site=0&app_id=464891386855067&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.8%2Fdialog%2Foauth%3Fapp_id%3D464891386855067%26cbt%3D1741379289162%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Dfca3913a09d242921%2526domain%253Dtinder.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Ftinder.com%25252Ff899cf8256d7cd2c4%2526relation%253Dopener%26client_id%3D464891386855067%26display%3Dpopup%26domain%3Dtinder.com%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Ftinder.com%252F%26locale%3Den_US%26logger_id%3Df22b27766d666b5ac%26origin%3D1%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df00cdb987ff213843%2526domain%253Dtinder.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Ftinder.com%25252Ff899cf8256d7cd2c4%2526relation%253Dopener%2526frame%253Dff7c8f2c40556de31%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26scope%3Duser_birthday%252Cuser_photos%252Cemail%252Cuser_likes%26sdk%3Djoey%26version%3Dv2.8%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df00cdb987ff213843%26domain%3Dtinder.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Ftinder.com%252Ff899cf8256d7cd2c4%26relation%3Dopener%26frame%3Dff7c8f2c40556de31%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=popup&locale=en_GB&pl_dbl=0"
-                sx={{
-                  width: "90%",
-                  mt: 2,
-                  borderRadius: 10,
-                  fontWeight: "bold",
-                  textTransform: "none",
-                  backgroundColor: "rgb(232, 233, 235)",
-                  color: "black",
-                  "&:hover": {
-                    backgroundColor: "#f0f0f0",
-                    boxShadow: "none",
-                  },
-                  boxShadow: "none",
-                }}
-              >
-                Log in with facebook
-              </Button>
-
-              <Button
-                variant="contained"
-                color="black"
                 onClick={() => setMobilePopUp(true)}
                 startIcon={<Call sx={{ color: "red" }} />}
                 sx={{
